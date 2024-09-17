@@ -1,0 +1,79 @@
+@import "../components/ui";
+
+[class*="__container"] {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.wrapper {
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+}
+
+body {
+	font-family: $ff1;
+	font-size: 16px;
+}
+
+//=================================Header======================================
+
+.header {
+	padding: 121px 0 71px 0;
+}
+
+.header__content-top {
+	height: 64px;
+}
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.menu {
+}
+.menu__icon {
+}
+.icon-menu {
+	display: none;
+}
+.burger__line {
+}
+.menu__body {
+}
+.menu__list {
+	display: flex;
+	& :not(:last-child) {
+		margin-right: 25px;
+	}
+}
+.menu__link {
+	color: var(--blackgrey-main-text);
+	font-weight: 500;
+	line-height: 19px;
+	text-align: left;
+}
+.header__content_link-info {
+	display: flex;
+	align-items: center;
+}
+.header__icon-link {
+	display: flex;
+	align-items: center;
+	img:nth-child(1) {
+		width: 43px;
+		height: 43px;
+		border-radius: 5px;
+		background-color: #74c04b;
+	}
+}
+.header__online-text {
+	display: flex;
+	flex-direction: column;
+}
+.header__content-bottom {
+}
+
+//===============================Header Media==================================

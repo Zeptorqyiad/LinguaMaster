@@ -1,0 +1,20 @@
+// ПЕРЕМЕННЫЕ>
+
+$ff1: Raleway;
+
+:root {
+	--bg-color: #ffffff;
+	--dark-color: #000000;
+	--blackgrey-main-text: #282828;
+	--red-color-btn: #dc4133;
+	--grey-color: #d9d9d9;
+	--aqua-color: #249eb8;
+	--aqualight-color: #27a8c4;
+}
+
+// Break-points
+
+//$pc: em($containerWidth); // ПК, ноутбуки, некоторые планшеты в горизонтальном положении
+// $tablet: em(991.98); // Планшеты, некоторые мобильные устройства в горизонтальном положении
+// $mobile: em(767.98); // Телефоны
+// $mobileSmall: em(479.98); // Маленькие телефоны
