@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<title>LinguaMaster</title>
+	<meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__content-top __container">
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<ul class="menu__list">
+							<li><a href="##" class="menu__link">Бизнесу</a></li>
+							<li><a href="##" class="menu__link">Частным лицам</a></li>
+							<li><a href="##" class="menu__link">О нас</a></li>
+							<li><a href="##" class="menu__link">Стоимость</a></li>
+							<li><a href="##" class="menu__link">Блог</a></li>
+						</ul>
+					</nav>
+					<div class="header__content_link-info">
+						<div class="header__icon-link">
+							<a href="##" class="whatsapp__icon"></a>
+							<a href="##" class="telegram__icon"></a>
+						</div>
+						<div class="header__online-text">
+							<p>принимаем заявки 24/7 на:</p>
+							<a href="mailto:info@linguamaster.ru">info@linguamaster.ru</a>
+						</div>
+						<a class="header__tel" href="tel:+74950213515">+7 (495) 021-35-15</a>
+					</div>
+				</div>
+				<div class="menu__icon icon-menu">
+					<span>Бизнесу</span>
+					<span>Частным лицам</span>
+					<span>О нас</span>
+					<span>Стоимость</span>
+					<span>Блог</span>
+				</div>
+				<div class="burger__line">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</div>
+			<hr style="height: 2px;background-color: #F5F6FA; width: 100%;">
+			<div class="header__content-bottom __container">
+				<a href="./index.html" class="header__logotype">
+					<img src="./assets/icon/Logo.svg" alt="Logotype">
+				</a>
+				<div class="header__bottom-rs">
+					<nav class="menu__body-rs">
+						<ul class="menu__list-rs">
+							<li><a href="##" class="menu__link-rs">Письменный перевод</a></li>
+							<li><a href="##" class="menu__link-rs">Устный перевод</a></li>
+							<li><a href="##" class="menu__link-rs">Нотариальный перевод</a></li>
+						</ul>
+					</nav>
+					<a class="header__btn" href="##">Заказать срочный перевод</a>
+				</div>
+			</div>
+		</header>
+		<main>
+
+		</main>
+		<footer id="footer">
+			<div class="footer__container">
+				<div class="footer__content">
+					<div class="footer__leftside">
+						<h3 class="footer__title">Получите расчет стоимости перевода или задайте вопрос</h3>
+						<form method="post" class="input__change-lang">
+							<!-- 1 -->
+							<div class="footer__item">
+								<input id="inputRus" type="text" placeholder="Русский" required>
+								<a href="##"><img src="./assets/icon/maskArrow.svg" alt="MaskChangeArrow"></a>
+								<input id="inputEng" type="text" placeholder="Английский" required>
+							</div>
+							<!-- 2 -->
+							<div class="footer__item">
+								<label for="textarea">Опишите в нескольких словах задачу</label>
+								<textarea id="textarea" type="text" placeholder="Что нужно перевести?" required></textarea>
+							</div>
+							<!-- 3 -->
+							<div class="footer__item">
+								<input type="file" name="" id="">
+							</div>
+							<!-- 4 -->
+							<div class="footer__item">
+								<input type="text" name="name" placeholder="Ваше имя" required>
+							</div>
+							<!-- 5 -->
+							<div class="footer__item">
+								<input type="number" name="tel" placeholder="+7" required>
+								<input type="email" name="email" placeholder="E-mail" required>
+							</div>
+							<!-- 6 -->
+							<div class="footer__item">
+								<fieldset>
+									<legend>Куда прислать расчет стоимости?</legend>
+									<div>
+										<input type="radio" id="EmailInp" name="fieldset" value="E-mail" checked />
+										<label for="EmailInp">E-mail</label>
+									</div>
+									<div>
+										<input type="radio" id="WhatsAppInp" name="fieldset" value="WhatsApp" />
+										<label for="WhatsAppInp">WhatsApp</label>
+									</div>
+									<div>
+										<input type="radio" id="TelegramInp" name="fieldset" value="Telegram" />
+										<label for="TelegramInp">Telegram</label>
+									</div>
+								</fieldset>
+							</div>
+						</form>
+						<button type="submit">Оставить заявку</button>
+						<div class="confirm__politic">
+							<input type="checkbox" name="Conf" id="Conf" required>
+							<p>
+								Соглашаюсь с
+								<a href="##">Политикой конфиденциальности</a>
+							</p>
+						</div>
+					</div>
+					<div class="footer__rightside">
+						<img src="./assets/image/Checkbox.png" alt="Checkbox">
+						<p>
+							Или просто напишите нам в
+							<a href="##">WhatsApp</a>
+							или
+							<a href="##">Telegram</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<!-- Подключаем Swiper -->
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<!-- Подключаем файл JS скриптов -->
+	<script src="./js/script.js"></script>
+</body>
+
+</html>
