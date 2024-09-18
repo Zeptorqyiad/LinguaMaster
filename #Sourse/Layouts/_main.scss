@@ -1,0 +1,130 @@
+@import "../components/ui";
+
+//===============================Main========================================
+
+.main__title {
+	background-color: var(--grey-color);
+	height: 127px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--dark-color);
+	font-size: 64px;
+	font-weight: 600;
+	line-height: 110%;
+}
+
+//==================================Blog=====================================
+
+.blog {
+	background-color: var(--bg-color);
+	display: flex;
+	flex-direction: column;
+	padding: 63px 0 108px 0;
+}
+.blog__textContent {
+	display: flex;
+	flex-direction: column;
+	gap: 63px;
+}
+.blog__title {
+	color: var(--blackgrey-main-text);
+	font-size: 41px;
+	font-weight: 400;
+	line-height: 48px;
+	text-align: center;
+	max-width: 761px;
+	margin: 0 auto;
+}
+.blog__subtitle {
+	color: var(--aqua-color);
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 29px;
+	text-align: center;
+	max-width: 1100px;
+	margin: 0 auto;
+	margin-bottom: 75px;
+}
+
+//==================================Blog Min=====================================
+.blog__min {
+	position: relative;
+	width: 360px;
+	height: 120px;
+	background-color: var(--grey-color);
+	border-radius: 24px;
+	padding: 20px 10px 11px 19px;
+	span {
+		color: #8b8989;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 1;
+		display: flex;
+		justify-content: center;
+	}
+}
+.blog__min-200 {
+	position: relative;
+	width: 360px;
+	height: 200px;
+	background-color: var(--grey-color);
+	border-radius: 24px;
+	padding: 26px 0 11px 15px;
+	span {
+		color: #8b8989;
+		font-size: 15px;
+		font-weight: 500;
+		line-height: 1;
+		display: flex;
+		justify-content: center;
+	}
+	h3 {
+		max-width: 248px;
+	}
+	p {
+		line-height: 137.2%;
+	}
+}
+.blog__min-200 canvas {
+	background-image: url("../../assets/icon/arrow.svg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: -165px;
+	right: -325px;
+}
+.blog__min canvas {
+	background-image: url("../../assets/icon/arrow.svg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: -85px;
+	right: -325px;
+}
+.blog__min-title {
+	color: var(--dark-color);
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1;
+	margin-bottom: 12px;
+}
+.blog__min-text {
+	max-height: 84px;
+	color: #696969;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 1;
+	text-align: left;
+	margin-bottom: 15px;
+}
+//==================================Blog Max=====================================
+
+
+
+//==================================Blog Media=================================
