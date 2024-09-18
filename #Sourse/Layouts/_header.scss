@@ -1,0 +1,103 @@
+@import "../components/ui";
+
+//=================================Header======================================
+
+.header {
+	padding: 121px 0 71px 0;
+}
+
+.header__content-top {
+	height: 64px;
+}
+.header__menu {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.icon-menu {
+	display: none;
+}
+.burger__line {
+}
+.menu__body {
+}
+.menu__list {
+	display: flex;
+	& :not(:last-child) {
+		margin-right: 25px;
+	}
+}
+.menu__link {
+	color: var(--blackgrey-main-text);
+	font-weight: 500;
+	line-height: 19px;
+	text-align: left;
+}
+.header__content_link-info {
+	display: flex;
+	align-items: center;
+}
+.header__icon-link {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+.whatsapp__icon {
+	background-color: #74c04b;
+	width: 43px;
+	height: 43px;
+	border-radius: 5px;
+	border: none;
+	background-image: url("../../assets/image/whatsapp.svg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center center;
+	cursor: pointer;
+}
+.telegram__icon {
+	background-color: #27a8c4;
+	width: 43px;
+	height: 43px;
+	border-radius: 5px;
+	border: none;
+	background-image: url("../../assets/image/telegram.svg");
+	background-repeat: no-repeat;
+	background-size: auto;
+	background-position: center center;
+	cursor: pointer;
+}
+.header__online-text {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	margin-left: 42px;
+	p {
+		color: #787373;
+		font-family: $ff1;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 15px;
+		letter-spacing: 0.1px;
+		text-align: left;
+	}
+	a {
+		color: var(--blackgrey-main-text);
+		font-size: 15px;
+		font-weight: 600;
+		line-height: 16px;
+		letter-spacing: 2%;
+		text-align: left;
+	}
+}
+.header__tel {
+	color: var(--blackgrey-main-text);
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 19px;
+	margin-left: 30px;
+}
+.header__content-bottom {
+}
+
+//===============================Header Media==================================

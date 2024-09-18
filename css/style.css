@@ -83,24 +83,6 @@ h1, h2, h3, h4, h5, h6 {
   --aqualight-color: #27a8c4;
 }
 
-[class*=__container] {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.wrapper {
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-body {
-  font-family: Raleway;
-  font-size: 16px;
-}
-
 .header {
   padding: 121px 0 71px 0;
 }
@@ -141,17 +123,93 @@ body {
 .header__icon-link {
   display: flex;
   align-items: center;
+  gap: 15px;
 }
-.header__icon-link img:nth-child(1) {
+
+.whatsapp__icon {
+  background-color: #74c04b;
   width: 43px;
   height: 43px;
   border-radius: 5px;
-  background-color: #74c04b;
+  border: none;
+  background-image: url("../../assets/image/whatsapp.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  cursor: pointer;
+}
+
+.telegram__icon {
+  background-color: #27a8c4;
+  width: 43px;
+  height: 43px;
+  border-radius: 5px;
+  border: none;
+  background-image: url("../../assets/image/telegram.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center center;
+  cursor: pointer;
 }
 
 .header__online-text {
   display: flex;
   flex-direction: column;
+  gap: 10px;
+  margin-left: 42px;
+}
+.header__online-text p {
+  color: #787373;
+  font-family: Raleway;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0.1px;
+  text-align: left;
+}
+.header__online-text a {
+  color: var(--blackgrey-main-text);
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 2%;
+  text-align: left;
+}
+
+.header__tel {
+  color: var(--blackgrey-main-text);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-left: 30px;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --dark-color: #000000;
+  --blackgrey-main-text: #282828;
+  --red-color-btn: #dc4133;
+  --grey-color: #d9d9d9;
+  --aqua-color: #249eb8;
+  --aqualight-color: #27a8c4;
+}
+
+[class*=__container] {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+body {
+  font-family: Raleway;
+  font-size: 16px;
 }
 
 :root {
