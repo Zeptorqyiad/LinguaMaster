@@ -814,6 +814,141 @@ body {
   align-items: center;
 }
 
+.example-blog {
+  padding: 20px 0 80px 0;
+}
+
+.example-blog__content a {
+  color: var(--blackgrey-main-text);
+  text-decoration: underline;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  text-align: left;
+}
+
+.content__exmp-1 {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.exmp-1__ls {
+  flex: 0 1 500px;
+}
+.exmp-1__ls span {
+  color: #8b8989;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 110%;
+  text-align: left;
+}
+.exmp-1__ls p {
+  margin-top: 60px;
+  color: var(--dark-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 137.2%;
+  text-align: left;
+  max-width: 461px;
+}
+
+.exmp-1__ls-title {
+  color: var(--dark-color);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 110%;
+  text-align: left;
+  margin-bottom: 8px;
+}
+
+.exmp-1__rs {
+  flex: 0 1 647px;
+  height: 317px;
+  background-color: #999999;
+  border-radius: 58px;
+}
+
+.grey__title {
+  height: 159px;
+  width: 100%;
+  background-color: #d9d9d9;
+  padding-top: 30px;
+}
+.grey__title div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.grey__title div > p:first-child {
+  color: var(--dark-color);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 110%;
+  text-align: left;
+}
+.grey__title div > p:not(:first-child) {
+  color: var(--dark-color);
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 110%;
+  text-align: left;
+}
+
+.content__exmp-2 {
+  margin: 132px 0 161px 0;
+}
+
+.content__exmp-2__content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.content__exmp-2__content h2 {
+  color: var(--blackgrey-main-text);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 47px;
+  margin-bottom: 28px;
+}
+.content__exmp-2__content h3 {
+  color: var(--blackgrey-main-text);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33px;
+  margin-bottom: 28px;
+}
+.content__exmp-2__content h4 {
+  color: var(--blackgrey-main-text);
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 33px;
+  margin-bottom: 28px;
+}
+
+.first-let {
+  color: var(--dark-color);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 137.2%;
+  margin-bottom: 84px;
+}
+
+.second-let {
+  color: var(--dark-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 137.2%;
+  margin-bottom: 28px;
+}
+
+.third-let {
+  color: var(--dark-color);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 137.2%;
+}
+
 :root {
   --bg-color: #ffffff;
   --dark-color: #000000;
