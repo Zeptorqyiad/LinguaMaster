@@ -1036,8 +1036,12 @@ body.__lock {
   margin-bottom: 40px;
 }
 
-#hiddenBlog {
+.hiddenBlog {
   display: none;
+}
+
+.showBlog {
+  display: block;
 }
 
 @media (max-width: 769.98px) {
@@ -1208,29 +1212,33 @@ body.__lock {
 }
 
 .services__content {
-  display: flex;
-  flex-direction: column;
-  gap: 36px;
   position: relative;
   z-index: 10;
 }
 
+.slider-btn {
+  display: none;
+}
+
 .services__title {
+  display: flex;
+  justify-content: center;
   color: var(--blackgrey-main-text);
   font-size: 51px;
   font-weight: 600;
   line-height: 60px;
   margin: 0 auto;
+  margin-bottom: 36px;
 }
 
 .swiper {
   width: 1360px;
+  margin-left: 15px;
 }
 
-.swiper-wrapper {
-  width: 1240px;
-  height: 330px;
-  margin: 0 auto;
+.services-swiper {
+  height: 330px !important;
+  width: 1060px !important;
 }
 
 .slide__content {
@@ -1296,6 +1304,60 @@ body.__lock {
   align-items: center;
 }
 
+@media (max-width: 425px) {
+  .services {
+    padding: 33px 0 43px 0;
+  }
+  .services__title {
+    color: var(--blackgrey-main-text);
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 39px;
+  }
+  .slide__content {
+    width: 360px;
+    gap: 0;
+    padding: 50px 22px 20px 24px;
+  }
+  .slide__content canvas {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    top: -36px;
+    left: 39%;
+    z-index: 999;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4980392157);
+    -webkit-backdrop-filter: blur(30px);
+            backdrop-filter: blur(30px);
+    background-image: url("../../assets/icon/services.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: auto;
+  }
+  .slider__title {
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 1;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 19px;
+  }
+  .slider__subtext {
+    color: #696969;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    text-align: center;
+  }
+  .slider-btn {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+}
 .example-blog {
   padding: 20px 0 80px 0;
 }

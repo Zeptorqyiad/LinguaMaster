@@ -134,7 +134,7 @@
 							<span>17 августа 2024, 2 мин</span>
 							<canvas></canvas>
 						</a>
-						<a href="./blog.html" class="blog__min-200" id="hiddenBlog">
+						<a href="./blog.html" class="blog__min-200 hiddenBlog">
 							<h3 class="blog__min-title">Очень длиный заголовок
 								аж в две строки, ого!</h3>
 							<p class="blog__min-text">
@@ -195,7 +195,7 @@
 								<canvas></canvas>
 							</div>
 						</a>
-						<a href="./blog.html" class="blog__min-200" id="hiddenBlog">
+						<a href="./blog.html" class="blog__min-200 hiddenBlog" id="hiddenBlog">
 							<h3 class="blog__min-title">Очень длиный заголовок
 								аж в две строки, ого!</h3>
 							<p class="blog__min-text">
@@ -247,7 +247,7 @@
 							<span>17 августа 2024, 2 мин</span>
 							<canvas></canvas>
 						</a>
-						<a href="./blog.html" class="blog__min-200" id="hiddenBlog">
+						<a href="./blog.html" class="blog__min-200 hiddenBlog">
 							<h3 class="blog__min-title">Очень длиный заголовок
 								аж в две строки, ого!</h3>
 							<p class="blog__min-text">
@@ -259,14 +259,14 @@
 						</a>
 					</div>
 				</div>
-				<button class="blog__btn" type="submit">Показать больше</button>
+				<button class="blog__btn">Показать больше</button>
 			</section>
 			<section class="services">
 				<div class="services__content &_container">
 					<h2 class="services__title">Наши услуги</h2>
-					<div class="swiper">
-						<div class="swiper-wrapper">
-							<div class="swiper-slide">
+					<div class="swiper swiper-services">
+						<div class="swiper-wrapper services-swiper">
+							<div class="swiper-slide services-slide">
 								<div class="slide__content">
 									<h4 class="slider__title">Перевод диплома</h4>
 									<div class="slider__subtext">
@@ -311,8 +311,12 @@
 								</div>
 							</div>
 						</div>
-						<div class="swiper-button-prev"></div>
-						<div class="swiper-button-next"></div>
+						<!-- <div class="swiper-button-prev custom-prev"></div> -->
+						<!-- <div class="swiper-button-next custom-next"></div> -->
+					</div>
+					<div class="slider-btn">
+						<img src="./assets/icon/prev-btn.svg" style="width: 42px;height: 42px;" alt="">
+						<img src="./assets/icon/next-btn.svg" style="width: 42px;height: 42px;" alt="">
 					</div>
 				</div>
 			</section>
@@ -326,7 +330,7 @@
 						<!-- 1 -->
 						<div class="footer__item">
 							<input id="inputRus" type="text" placeholder="Русский" required>
-							<a href="##"><img src="./assets/icon/maskArrow.svg" alt="MaskChangeArrow"></a>
+							<a href="#change"><img src="./assets/icon/maskArrow.svg" alt="MaskChangeArrow"></a>
 							<input id="inputEng" type="text" placeholder="Английский" required>
 						</div>
 						<!-- 2 -->
