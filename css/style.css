@@ -1315,6 +1315,10 @@ body.__lock {
   justify-content: space-between;
 }
 
+.bottom-text {
+  display: none;
+}
+
 .exmp-1__ls {
   flex: 0 1 500px;
 }
@@ -1342,6 +1346,14 @@ body.__lock {
   line-height: 110%;
   text-align: left;
   margin-bottom: 8px;
+  background-image: url("../../assets/icon/bookmark.svg");
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: right center;
+}
+
+.bookmarkIcon {
+  fill: white;
 }
 
 .exmp-1__rs {
@@ -1431,6 +1443,59 @@ body.__lock {
   line-height: 137.2%;
 }
 
+@media (max-width: 734.98px) {
+  .exmp-1__ls-title {
+    color: var(--dark-color);
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 110%;
+    text-align: left;
+  }
+  .content__exmp-1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .content__exmp-1 p {
+    display: block;
+    margin-top: 12px;
+    color: var(--dark-color);
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 137.2%;
+    text-align: left;
+  }
+  .exmp-1__rs {
+    margin-top: 12px;
+    max-height: 214px;
+  }
+  .exmp-1__ls {
+    flex: 0 1 auto;
+  }
+  .exmp-1__ls p {
+    display: none;
+  }
+  .example-blog {
+    padding: 0px 0 20px 0;
+  }
+  .link-bread {
+    display: none;
+  }
+  .content__exmp-2 {
+    margin: 34px 0 34px 0;
+  }
+  .first-let {
+    margin-bottom: 29px;
+  }
+  .second-let {
+    margin-bottom: 28px;
+  }
+  .third-let {
+    display: none;
+  }
+  .content__exmp-2__content h4 {
+    display: none;
+  }
+}
 :root {
   --bg-color: #ffffff;
   --dark-color: #000000;

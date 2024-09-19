@@ -2,8 +2,21 @@
 
 new Swiper('.swiper', {
    slidesPerView: 3,
-   spaceBetween: 60,
    loop: true,
+   breakpoints: {
+      400: {
+         slidesPerView: 1,
+         spaceBetween: 20,
+      },
+      640: {
+         slidesPerView: 2,
+         spaceBetween: 40,
+      },
+      1240: {
+         slidesPerView: 3,
+         spaceBetween: 60,
+      },
+   },
 
    navigation: {
       nextEl: '.swiper-button-next',
