@@ -335,9 +335,11 @@
 							<textarea id="textarea" type="text" placeholder="Что нужно перевести?" required></textarea>
 						</div>
 						<!-- 3 -->
-						<div class="footer__item">
-							<input type="file" name="" id="">
-						</div>
+						<label class="footer__item input-file">
+							<input type="file" accept="image/*" required>
+							<span class="input-file-btn"></span>
+							<span class="input-file-text">Прикрепите файл</span>
+						</label>
 						<!-- 4 -->
 						<div class="footer__item">
 							<input type="text" name="name" placeholder="Ваше имя" required>
@@ -352,27 +354,30 @@
 							<fieldset>
 								<legend>Куда прислать расчет стоимости?</legend>
 								<div>
-									<input type="radio" id="EmailInp" name="fieldset" value="E-mail" checked />
+									<input type="radio" class="custom-radio" id="EmailInp" name="fieldset" value="E-mail"
+										checked />
 									<label for="EmailInp">E-mail</label>
 								</div>
 								<div>
-									<input type="radio" id="WhatsAppInp" name="fieldset" value="WhatsApp" />
+									<input type="radio" class="custom-radio" id="WhatsAppInp" name="fieldset" value="WhatsApp" />
 									<label for="WhatsAppInp">WhatsApp</label>
 								</div>
 								<div>
-									<input type="radio" id="TelegramInp" name="fieldset" value="Telegram" />
+									<input type="radio" class="custom-radio" id="TelegramInp" name="fieldset" value="Telegram" />
 									<label for="TelegramInp">Telegram</label>
 								</div>
 							</fieldset>
 						</div>
 					</form>
 					<button type="submit">Оставить заявку</button>
-					<div class="confirm__politic">
-						<input type="checkbox" name="Conf" id="Conf" required>
-						<p>
-							Соглашаюсь с
-							<a href="##">Политикой конфиденциальности</a>
-						</p>
+					<div class="checkbox-politic">
+						<label class="confirm__politic">
+							<input type="checkbox" name="Conf" id="Conf" required>
+							<span>
+								Соглашаюсь с&nbsp;
+								<a href="##">Политикой конфиденциальности</a>
+							</span>
+						</label>
 					</div>
 				</div>
 				<div class="footer__rightside">
@@ -387,6 +392,8 @@
 			</div>
 		</footer>
 	</div>
+	<!-- JQuerry -->
+	<script src="https://snipp.ru/cdn/jquery/2.1.1/jquery.min.js"></script>
 	<!-- Подключаем Swiper -->
 	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 	<!-- Подключаем файл JS скриптов -->

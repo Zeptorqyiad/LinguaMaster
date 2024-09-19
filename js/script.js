@@ -1,3 +1,5 @@
+// Swiper
+
 new Swiper('.swiper', {
    slidesPerView: 3,
    spaceBetween: 60,
@@ -20,4 +22,10 @@ burgerLine.addEventListener('click', () => {
       burgerLine.classList.toggle('active')
       burgerList.classList.toggle('active')
    }
+})
+
+// Input file
+$('.input-file input[type=file]').on('change', function () {
+   let file = this.files[0]
+   $(this).closest('.input-file').find('.input-file-text').html(file.name)
 })
