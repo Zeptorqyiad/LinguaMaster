@@ -12,6 +12,8 @@
 	padding: 78px 130px 81px 100px;
 	display: flex;
 	justify-content: space-between;
+	max-width: 1170px;
+	margin: 0 auto;
 }
 
 .footer__leftside {
@@ -216,3 +218,112 @@ input[type="checkbox" i] {
 }
 
 //==============================Footer Media=============================
+@media (max-width: 1087.98px) {
+	.footer__content {
+		gap: 10px;
+		align-items: center;
+	}
+	.footer__rightside img {
+		width: 100%;
+	}
+}
+@media (max-width: 842px) {
+	.footer__title {
+		max-width: 416px;
+	}
+	.footer__content {
+		flex-direction: column;
+		height: inherit;
+		gap: 40px;
+	}
+	.footer__leftside {
+		align-items: center;
+	}
+}
+@media (max-width: 600px) {
+	.footer__content {
+		padding: 70px 20px 70px 20px;
+	}
+	.footer__title {
+		max-width: 330px;
+	}
+	.footer__rightside {
+		justify-content: flex-start;
+		flex: 0 0 auto;
+		gap: 15px;
+		img {
+			width: 79px;
+			height: 86px;
+		}
+		p {
+			font-size: 20px;
+			font-weight: 600;
+			line-height: 23px;
+			text-align: center;
+		}
+	}
+	#footer {
+		margin-bottom: 50px;
+	}
+	.footer__leftside {
+		width: 370px;
+	}
+	.input__change-lang {
+		display: flex;
+		flex-direction: column;
+		max-width: 370px;
+	}
+	.footer__item:nth-child(1) {
+		margin-bottom: 30px;
+		input {
+			width: 160px;
+		}
+	}
+	.footer__item:nth-child(2) {
+		textarea {
+			width: 370px;
+		}
+	}
+	.footer__item:nth-child(3) {
+		margin-bottom: 23px;
+	}
+	.footer__item:nth-child(4) {
+		input {
+			width: 370px;
+			margin-bottom: 20px;
+		}
+	}
+	.footer__item:nth-child(5) {
+		input {
+			width: 176px;
+			margin-bottom: 20px;
+		}
+	}
+	.footer__item:nth-child(6) {
+		margin-bottom: 35px;
+		fieldset {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 32px;
+			legend {
+				color: var(--bg-color);
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 19px;
+				text-align: left;
+				margin-bottom: 19px;
+			}
+			div > label {
+				padding-left: 10px;
+				color: var(--bg-color);
+				font-size: 16px;
+				font-weight: 600;
+				line-height: 19px;
+				text-align: left;
+			}
+		}
+	}
+	.footer__leftside button {
+		width: 100%;
+	}
+}

@@ -12,7 +12,7 @@ new Swiper('.swiper', {
 // Бургер меню
 
 let burgerLine = document.querySelector('.burger__line')
-let burgerList = document.querySelector('.menu__icon')
+let burgerList = document.querySelector('.icon-menu')
 
 burgerLine.addEventListener('click', () => {
    if (burgerLine) {
