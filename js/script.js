@@ -16,7 +16,7 @@ let burgerList = document.querySelector('.menu__icon')
 
 burgerLine.addEventListener('click', () => {
    if (burgerLine) {
-      document.body.classList.add('__lock')
+      document.body.classList.toggle('__lock')
       burgerLine.classList.toggle('active')
       burgerList.classList.toggle('active')
    }

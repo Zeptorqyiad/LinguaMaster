@@ -15,6 +15,15 @@
 	line-height: 110%;
 }
 
+@media (max-width: 500px) {
+	.main__title {
+		height: 78px;
+		font-size: 33px;
+		font-weight: 600;
+		line-height: 110%;
+	}
+}
+
 //==================================Blog=====================================
 
 .blog {
@@ -50,15 +59,46 @@
 
 .blog__columns {
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding: 0 10px;
 }
 .blog__column {
 	display: flex;
 	flex-direction: column;
 	gap: 49px;
+	margin-bottom: 40px;
 }
 #hiddenBlog {
 	display: none;
+}
+
+@media (max-width: 769.98px) {
+	.blog__title {
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 23px;
+	}
+}
+@media (max-width: 500px) {
+	.blog {
+		padding: 31px 0 36px 0;
+	}
+	.blog__title {
+		font-size: 20px;
+		font-weight: 400;
+		line-height: 23px;
+	}
+	.blog__textContent {
+		gap: 25px;
+	}
+	.blog__subtitle {
+		font-size: 16px;
+		font-weight: 600;
+		line-height: 19px;
+		margin-bottom: 31px;
+		max-width: 351px;
+	}
 }
 
 //==================================Blog Min=====================================
@@ -187,7 +227,11 @@
 	margin: 0 auto;
 	margin-top: 156px;
 }
-
+@media (max-width: 500px) {
+	.blog__btn {
+		margin-top: 0px;
+	}
+}
 //==================================Blog Media=================================
 
 //==================================Services=====================================
