@@ -1,22 +1,21 @@
 // Swiper
 
-new Swiper('.swiper-services', {
-   slidesPerView: 3,
-   spaceBetween: 60,
-   loop: true,
-   breakpoints: {
-      400: {
-         slidesPerView: 1,
-      },
-      1240: {
-         slidesPerView: 3,
-      },
-   },
+let offset = 0
+const sliderLine = document.querySelector('.services__block-content')
 
-   navigation: {
-      nextEl: '.custom-next',
-      prevEl: '.custom-prev',
-   },
+document.querySelector('.arrow-left').addEventListener('click', function () {
+   offset -= 430
+   if (offset < 0) {
+      offset = 860
+   }
+   sliderLine.style.left = -offset + 'px'
+})
+document.querySelector('.arrow-right').addEventListener('click', function () {
+   offset += 430
+   if (offset > 860) {
+      offset = 0
+   }
+   sliderLine.style.left = -offset + 'px'
 })
 
 // Бургер меню
