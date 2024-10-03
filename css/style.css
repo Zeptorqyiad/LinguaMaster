@@ -1462,6 +1462,11 @@ body.__lock {
 
 .bookmark-big {
   display: block;
+  cursor: pointer;
+}
+
+.mark rect {
+  fill-opacity: 1;
 }
 
 .bookmark-min {

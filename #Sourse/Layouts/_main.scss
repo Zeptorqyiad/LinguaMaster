@@ -484,9 +484,12 @@
 }
 .bookmark-big {
 	display: block;
+	cursor: pointer;
 }
-.bookmark-big rect {
-	// fill-opacity: 1;
+.mark {
+	rect {
+		fill-opacity: 1;
+	}
 }
 .bookmark-min {
 	display: none;

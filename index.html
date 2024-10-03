@@ -260,6 +260,17 @@
 					</div>
 				</div>
 				<button class="blog__btn">Показать больше</button>
+				<script>
+					let showButton = document.querySelector('.blog__btn')
+					let blog = document.querySelector('.hiddenBlog')
+
+					showButton.addEventListener('click', () => {
+						if (showButton) {
+							blog.classList.add('showBlog')
+							showButton.classList.add('hiddenBlog')
+						}
+					})
+				</script>
 			</section>
 			<section class="services">
 				<div class="services_container">

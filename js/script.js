@@ -56,23 +56,3 @@ $('.input-file input[type=file]').on('change', function () {
    let file = this.files[0]
    $(this).closest('.input-file').find('.input-file-text').html(file.name)
 })
-
-// Скрытые блоги
-
-let showButton = document.querySelector('.blog__btn')
-let blog = document.querySelector('.hiddenBlog')
-
-showButton.addEventListener('click', () => {
-   if (showButton) {
-      blog.classList.add('showBlog')
-      showButton.classList.add('hiddenBlog')
-   }
-})
-
-// Bookmark
-
-const bookmark = document.querySelector('.bookmark-big')
-
-document.bookmark.addEventListener('click', () => {
-   bookmark.style.fillOpacity = 1
-})
