@@ -1,21 +1,41 @@
 // Swiper
 
+const windowWidth = window.innerWidth
+
 let offset = 0
 const sliderLine = document.querySelector('.services__block-content')
 
 document.querySelector('.arrow-left').addEventListener('click', function () {
-   offset -= 430
-   if (offset < 0) {
-      offset = 860
+   if (windowWidth >= 425) {
+      offset -= 420
+      if (offset < 0) {
+         offset = 840
+      }
+      sliderLine.style.left = -offset + 'px'
    }
-   sliderLine.style.left = -offset + 'px'
+   if (windowWidth < 424) {
+      offset -= 360
+      if (offset <= 0) {
+         offset = 920
+      }
+      sliderLine.style.left = -offset + 'px'
+   }
 })
 document.querySelector('.arrow-right').addEventListener('click', function () {
-   offset += 430
-   if (offset > 860) {
-      offset = 0
+   if (windowWidth >= 425) {
+      offset += 430
+      if (offset > 860) {
+         offset = 0
+      }
+      sliderLine.style.left = -offset + 'px'
    }
-   sliderLine.style.left = -offset + 'px'
+   if (windowWidth < 424) {
+      offset += 430
+      if (offset > 860) {
+         offset = 0
+      }
+      sliderLine.style.left = -offset + 'px'
+   }
 })
 
 // Бургер меню
