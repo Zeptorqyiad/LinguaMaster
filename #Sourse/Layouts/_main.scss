@@ -477,6 +477,20 @@
 		max-width: 461px;
 	}
 }
+#bookmark {
+	display: flex;
+	gap: 25px;
+	align-items: center;
+}
+.bookmark-big {
+	display: block;
+}
+.bookmark-big rect {
+	// fill-opacity: 1;
+}
+.bookmark-min {
+	display: none;
+}
 .exmp-1__ls-title {
 	color: var(--dark-color);
 	font-size: 64px;
@@ -484,10 +498,7 @@
 	line-height: 110%;
 	text-align: left;
 	margin-bottom: 8px;
-	background-image: url("../../assets/icon/bookmark.svg");
-	background-repeat: no-repeat;
-	background-size: auto;
-	background-position: right center;
+	position: relative;
 }
 .bookmarkIcon {
 	fill: white;
@@ -577,27 +588,44 @@
 }
 
 //===================================Blog Page Media====================================
-
-@media (max-width: 734.98px) {
+@media (max-width: 1200px) {
+	.exmp-1__ls-title {
+		color: var(--dark-color);
+		font-size: 46px;
+		font-weight: 600;
+	}
+}
+@media (max-width: 900px) {
 	.exmp-1__ls-title {
 		color: var(--dark-color);
 		font-size: 36px;
 		font-weight: 600;
-		line-height: 110%;
-		text-align: left;
+	}
+}
+
+@media (max-width: 734.98px) {
+	#bookmark {
+		gap: 0;
+		justify-content: space-between;
 	}
 	.content__exmp-1 {
 		display: flex;
 		flex-direction: column;
 		p {
 			display: block;
-			margin-top: 12px;
+			margin-top: 49px;
 			color: var(--dark-color);
 			font-size: 20px;
 			font-weight: 500;
 			line-height: 137.2%;
 			text-align: left;
 		}
+	}
+	.bookmark-big {
+		display: none;
+	}
+	.bookmark-min {
+		display: block;
 	}
 	.exmp-1__rs {
 		margin-top: 12px;

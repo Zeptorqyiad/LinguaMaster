@@ -68,3 +68,11 @@ showButton.addEventListener('click', () => {
       showButton.classList.add('hiddenBlog')
    }
 })
+
+// Bookmark
+
+const bookmark = document.querySelector('.bookmark-big')
+
+document.bookmark.addEventListener('click', () => {
+   bookmark.style.fillOpacity = 1
+})
