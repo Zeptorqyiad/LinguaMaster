@@ -56,3 +56,24 @@ $('.input-file input[type=file]').on('change', function () {
    let file = this.files[0]
    $(this).closest('.input-file').find('.input-file-text').html(file.name)
 })
+
+$(document).ready(function () {
+   $('#grid').masonry({
+      itemSelector: '.item',
+      singleMode: true,
+      isResizable: true,
+      isAnimated: true,
+      animationOptions: {
+         queue: false,
+         duration: 500,
+      },
+   })
+})
+
+let showButton = document.querySelector('.blog__btn')
+let hiddenBlog = document.querySelector('hiddenBlog')
+
+showButton.addEventListener('click', () => {
+   hiddenBlog.classList.add('active-block')
+   showButton.style.display = 'none'
+})

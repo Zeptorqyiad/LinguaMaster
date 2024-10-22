@@ -4,7 +4,7 @@
 
 .main__title {
 	background-color: var(--grey-color);
-	height: 127px;
+	padding: 29px 0;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -17,7 +17,7 @@
 
 @media (max-width: 500px) {
 	.main__title {
-		height: 78px;
+		padding: 21px 0;
 		font-size: 33px;
 		font-weight: 600;
 		line-height: 110%;
@@ -28,8 +28,6 @@
 
 .blog {
 	background-color: var(--bg-color);
-	display: flex;
-	flex-direction: column;
 	padding: 63px 0 108px 0;
 }
 .blog__textContent {
@@ -55,25 +53,6 @@
 	max-width: 1100px;
 	margin: 0 auto;
 	margin-bottom: 75px;
-}
-
-.blog__columns {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	padding: 0 10px;
-}
-.blog__column {
-	display: flex;
-	flex-direction: column;
-	gap: 49px;
-	margin-bottom: 40px;
-}
-.hiddenBlog {
-	display: none;
-}
-.showBlog {
-	display: block;
 }
 
 @media (max-width: 769.98px) {
@@ -104,135 +83,157 @@
 	}
 }
 
-//==================================Blog Min=====================================
-.blog__min {
+//==================================Blog=====================================
+.blog__wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	align-items: center;
+}
+.item {
+	float: left;
+	margin: 20px;
+}
+@media (max-width: 425px) {
+	.item {
+		float: left;
+		margin: 10px;
+	}
+}
+@mixin break_word() {
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	word-break: break-word;
+}
+@mixin text_count_line($count) {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: $count;
+	-webkit-box-orient: vertical;
+	@include break_word();
+}
+.min-blog {
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	width: 360px;
-	height: 120px;
-	background-color: var(--grey-color);
 	border-radius: 24px;
+	background: var(--grey-color);
 	padding: 20px 10px 11px 19px;
-	span {
-		color: #8b8989;
-		font-size: 15px;
-		font-weight: 500;
-		line-height: 1;
-		display: flex;
-		justify-content: center;
+	&::after {
+		content: "";
+		background-image: url("../../assets/icon/arrow.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		bottom: -8px;
+		right: -8px;
+		width: 45px;
+		height: 45px;
 	}
 }
-.blog__min-200 {
-	position: relative;
-	width: 360px;
-	height: 200px;
-	background-color: var(--grey-color);
-	border-radius: 24px;
-	padding: 26px 0 11px 15px;
-	span {
-		color: #8b8989;
-		font-size: 15px;
-		font-weight: 500;
-		line-height: 1;
-		display: flex;
-		justify-content: center;
-	}
-	h3 {
-		max-width: 248px;
-	}
-	p {
-		line-height: 137.2%;
-	}
-}
-.blog__min-200 canvas {
-	background-image: url("../../assets/icon/arrow.svg");
-	background-repeat: no-repeat;
-	background-size: auto;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	bottom: -165px;
-	right: -325px;
-}
-.blog__min canvas {
-	background-image: url("../../assets/icon/arrow.svg");
-	background-repeat: no-repeat;
-	background-size: auto;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	bottom: -85px;
-	right: -325px;
-}
-.blog__min-title {
-	color: var(--dark-color);
+.blog__head {
+	color: rgb(0, 0, 0);
+	font-family: Raleway;
 	font-size: 20px;
 	font-weight: 600;
-	line-height: 1;
-	margin-bottom: 12px;
+	line-height: 90%;
+	text-align: left;
+	max-width: 248px;
 }
-.blog__min-text {
-	max-height: 84px;
-	color: #696969;
+.blog__text {
+	color: rgb(105, 105, 105);
+	font-family: Raleway;
 	font-size: 16px;
 	font-weight: 500;
-	line-height: 1;
+	line-height: 125%;
 	text-align: left;
-	margin-bottom: 12px;
-}
-//==================================Blog Max=====================================
-
-.blog__max {
-	position: relative;
-	height: 310px;
-	width: 360px;
 }
 .blog__bottom-content {
 	position: relative;
 	width: 360px;
 	margin-top: -60px;
-	height: 120px;
 	background-color: var(--grey-color);
 	border-radius: 24px;
 	padding: 20px 10px 11px 19px;
-	span {
-		color: #8b8989;
-		font-size: 15px;
-		font-weight: 500;
-		line-height: 1;
-		display: flex;
-		justify-content: center;
+	&::after {
+		content: "";
+		background-image: url("../../assets/icon/arrow.svg");
+		background-repeat: no-repeat;
+		position: absolute;
+		bottom: -8px;
+		right: -8px;
+		width: 45px;
+		height: 45px;
 	}
 }
-.blog__bottom-content canvas {
-	background-image: url("../../assets/icon/arrow.svg");
-	background-repeat: no-repeat;
-	background-size: auto;
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	bottom: -85px;
-	right: -325px;
+.h-120 {
+	height: 120px;
+	h3 {
+		margin-bottom: 8px;
+	}
+	p {
+		@include text_count_line(2);
+		margin-bottom: 8px;
+	}
+}
+.h-200 {
+	height: 200px;
+	h3 {
+		margin-bottom: 12px;
+	}
+	p {
+		@include text_count_line(4);
+		margin-bottom: 20px;
+	}
+}
+.h-310-long {
+	h3 {
+		margin-bottom: 8px;
+	}
+	p {
+		@include text_count_line(1);
+		margin-bottom: 20px;
+	}
+}
+.h-310-short {
+	h3 {
+		margin-bottom: 8px;
+	}
+	p {
+		@include text_count_line(2);
+		margin-bottom: 20px;
+	}
+}
+.blog__time-publish {
+	color: rgb(139, 137, 137);
+	font-family: Raleway;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 110%;
+	display: flex;
+	justify-content: center;
 }
 
 //=================================Button blog======================================
 
 .blog__btn {
-	width: 211px;
-	height: 51px;
-	border-radius: 25px;
+	box-sizing: content-box;
+	border-radius: 50px;
 	border: 1px solid var(--dark-color);
 	background-color: transparent;
 	color: #696969;
 	font-size: 20px;
 	font-weight: 500;
-	line-height: 137.2%;
 	text-align: center;
+	display: flex;
 	margin: 0 auto;
 	margin-top: 156px;
+	padding: 18px 22px;
 }
 @media (max-width: 500px) {
 	.blog__btn {
-		margin-top: 0px;
+		margin-top: 20px;
 	}
 }
 //==================================Blog Media=================================
@@ -454,6 +455,7 @@
 	margin-top: 48px;
 	display: flex;
 	justify-content: space-between;
+	gap: 20px;
 }
 .bottom-text {
 	display: none;
@@ -480,11 +482,14 @@
 #bookmark {
 	display: flex;
 	gap: 25px;
-	align-items: center;
+	justify-content: space-between;
+	align-items: flex-start;
 }
 .bookmark-big {
 	display: block;
 	cursor: pointer;
+	margin-top: 15px;
+	flex: 0 0 auto;
 }
 .mark {
 	rect {
@@ -496,12 +501,13 @@
 }
 .exmp-1__ls-title {
 	color: var(--dark-color);
-	font-size: 64px;
+	font-size: 48px;
 	font-weight: 600;
 	line-height: 110%;
 	text-align: left;
 	margin-bottom: 8px;
 	position: relative;
+	align-items: flex-start;
 }
 .bookmarkIcon {
 	fill: white;
@@ -540,7 +546,7 @@
 }
 
 .content__exmp-2 {
-	margin: 132px 0 161px 0;
+	margin: 0px 0 161px 0;
 }
 
 .content__exmp-2__content {
